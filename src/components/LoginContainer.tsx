@@ -29,8 +29,12 @@ const ProfileContainer: React.FC<ContainerProps> = ({ name }) => {
               <IonInput type="password" placeholder="Enter Password"></IonInput>
             </IonItem>
             <IonButton expand="block">Login</IonButton>
+            <br/>
+            <p><strong>Create New Account? <a href="/register">Register</a></strong></p>
+            <p><strong>Forgot Password? <a href="/reset-password">Reset Password</a></strong></p>
           </IonCardContent>
         </IonCard>
+        <br/>
       </IonContent>
     </IonPage>
   );

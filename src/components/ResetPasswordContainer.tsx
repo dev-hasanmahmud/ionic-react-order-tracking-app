@@ -25,9 +25,12 @@ const ResetPasswordContainer: React.FC<ContainerProps> = ({ name }) => {
               <IonInput type="text" placeholder="Enter Email"></IonInput>
             </IonItem>
             <IonButton expand="block">Reset Password</IonButton>
+            <br/>
+            <p><strong>Already Created Account? <a href="/login">SignIn</a></strong></p>
           </IonCardContent>
         </IonCard>
       </IonContent>
+      <br/>
     </IonPage>
   );
 };

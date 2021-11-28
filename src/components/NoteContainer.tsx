@@ -1,5 +1,5 @@
 import './NoteContainer.css';
-import { IonItemDivider, IonContent, IonTextarea, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonButton } from '@ionic/react';
+import { IonItemGroup, IonLabel, IonItemDivider, IonContent, IonTextarea, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonButton } from '@ionic/react';
 interface ContainerProps {
   name: string;
 }
@@ -27,6 +27,24 @@ const NoteContainer: React.FC<ContainerProps> = ({ name }) => {
             <IonButton expand="block">Save</IonButton>
           </IonCardContent>
         </IonCard>
+
+        <IonCard>
+          <IonItemGroup>
+            <IonItemDivider>
+              <IonLabel>Notes List</IonLabel>
+            </IonItemDivider>
+            <IonItem>
+              <IonLabel>Note item 1</IonLabel>
+            </IonItem>
+            <IonItem>
+              <IonLabel>Note item 2</IonLabel>
+            </IonItem>
+            <IonItem>
+              <IonLabel>Note item 3</IonLabel>
+            </IonItem>
+          </IonItemGroup>
+        </IonCard>
+        <br/><br/><br/>
       </IonContent>
     </IonPage>
   );

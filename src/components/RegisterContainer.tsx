@@ -37,9 +37,13 @@ const RegisterContainer: React.FC<ContainerProps> = ({ name }) => {
               <IonInput type="password" placeholder="Enter Confirm Password"></IonInput>
             </IonItem>
             <IonButton expand="block">Register</IonButton>
+            <br/>
+            <p><strong>Already Created Account? <a href="/login">SignIn</a></strong></p>
+            <p><strong>Forgot Password? <a href="/reset-password">Reset Password</a></strong></p>
           </IonCardContent>
         </IonCard>
       </IonContent>
+      <br/>
     </IonPage>
   );
 };

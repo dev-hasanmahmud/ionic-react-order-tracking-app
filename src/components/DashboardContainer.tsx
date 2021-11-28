@@ -79,6 +79,7 @@ const DashboardContainer: React.FC<ContainerProps> = ({ name }) => {
             and climb a mountain or spend a week in the woods. Wash your spirit clean.
           </IonCardContent>
         </IonCard>
+        <br/><br/><br/>
       </IonContent>
     </IonPage>
   );

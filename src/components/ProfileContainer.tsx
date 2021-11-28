@@ -1,5 +1,5 @@
 import './ProfileContainer.css';
-import { IonItemDivider, IonItem, IonInput, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonChip, IonAvatar, IonLabel, IonItemDivider, IonItem, IonInput, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent } from '@ionic/react';
 interface ContainerProps {
   name: string;
 }
@@ -15,6 +15,12 @@ const ProfileContainer: React.FC<ContainerProps> = ({ name }) => {
       <IonContent>
         <IonCard>
           <IonCardHeader>
+            <IonChip>
+              <IonAvatar>
+                <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+              </IonAvatar>
+              <IonLabel>Chip Avatar</IonLabel>
+            </IonChip>
             <IonCardTitle>Welcome to TrackApp</IonCardTitle>
           </IonCardHeader>
 
@@ -46,9 +52,11 @@ const ProfileContainer: React.FC<ContainerProps> = ({ name }) => {
               <IonInput type="password" placeholder="Enter Confirm Password"></IonInput>
             </IonItem>
             <IonButton expand="block">Update</IonButton>
+            <br/>
           </IonCardContent>
         </IonCard>
       </IonContent>
+      <br/>
     </IonPage>
   );
 };
