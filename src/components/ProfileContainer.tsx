@@ -25,7 +25,7 @@ const ProfileContainer: React.FC<ContainerProps> = ({ name }) => {
           </IonCardHeader>
 
           <IonCardContent>
-          Welcome to TrackApp. Your Profile Keep close to Nature's heart Wash your spirit.
+          Welcome to TrackApp. Your <a href="/login">Profile</a> Keep close to Nature's heart Wash your spirit.
           </IonCardContent>
         </IonCard>
         <IonCard>
