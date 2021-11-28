@@ -1,0 +1,8 @@
+{
+  "name": "track_app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "b3baf0f7"
+}
